@@ -44,10 +44,10 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --config ./prettier.config.js --write"
+      "prettier --config ./prettier.config.mjs --write"
     ],
     "**/*.{css,scss,md,html,json}": [
-      "prettier --config ./prettier.config.js --write"
+      "prettier --config ./prettier.config.mjs --write"
     ]
   },
   "config": {
