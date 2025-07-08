@@ -27,7 +27,8 @@
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.36.0"
+    "typescript-eslint": "^8.36.0",
+    "ultracite": "5.0.32"
   },
   "dependencies": {
     "@fastify/cors": "^11.0.1",
@@ -48,6 +49,9 @@
     ],
     "**/*.{css,scss,md,html,json}": [
       "prettier --config ./prettier.config.mjs --write"
+    ],
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "npx ultracite format"
     ]
   },
   "config": {
